@@ -1,0 +1,41 @@
+{
+  "title": "",
+  "rating": "",
+  "review_count": "",
+  "price": "",
+  "discount_price": "",
+  "description": "",
+  "promotion_text_1": "",
+  "promotion_text_2": "",
+  "images": [
+    {
+      "url": "https://s3-alpha-sig.figma.com/img/eec6/f49c/e039f74aa717d1c3d7885bc4a73ead10?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q0Ia~J6JANFduMqHvjDhw4KPWtjScwboS0-c1smWJqFq9QKmQEItxQ0hCYly98Iri3IsqbT6m2UtulUpKpNN4lpKnVrsoaSKa4EdbKJdlWrhhv6COm5DdAJ8coRlwoczEAF4YLWinPwxdwmizA2FBTdS2cMX41i3~Qj4Z6bE3yJ-gXqtoeOZpCLg1YfrVu4zN0fujQFs5YJV3RN1FDjUI6tEfmx54W88xBliIKWcR-F4iT944AhgDTBBya3SOIpcLkaL9G9De-9XwS34DS6W1XEDLvYUGeqXbfPHJcBz8uo~mDPVPTi6aU4VSDhq5ev7aXNcohJuxJK5STtFtL~6Jg__"
+    },
+    {
+      "url": "https://s3-alpha-sig.figma.com/img/1c60/79f1/b8b501179df40bd5177f5a45a6c56e9b?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ur4mqfeTZXsrf2XzSVYdKJ9TrWcLcG7gCFgP0Irwq1OqU1H51gfrG49m8MTar~-llIWKe-sYQ9aD93NwTRafsWM9cHvUHvuY1OI6r6iDwBJ62Q3TFVzf8hRo-mzruPl-uer4u6~UMSXT6QLioF-tJPcBbL60V7vg0Lt4c~fNbULWb3V8aYdpnpCT2Bu6gwg-oNYCoivGuo3I9Ayn6gpuaMMo6BhCVGcb6iQBOyrmNvY6XTHzppVrV3Aj19ruZhpcGkTem5dA7wRVyVPyNdAGAjKIovRu7B68Kdh9kptSFkoFwgi5CffLp0skPzO~QBrXVTuxUgSYQojyVyIbeMXP0g__"
+    },
+    {
+      "url": "https://s3-alpha-sig.figma.com/img/2b88/a6d0/5ae7afa132694e74ed23408e8fd51e4e?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WeYSyJkizQSmGc6rTQBSt1wEStuLbGqphnd0EwlXzMWNjpwz~kjcr8UyciVaT8uS8CRIyfd6tBG2Cp4I7jaSqv4mkkBaKHxY-i2QUw4Q11UxrWvK5D-vDwaCFbK0-1e~pThrF4PDO6Ky~IfF44hMTLXcVZ9aqLtwTTcw2PqA0ODhc4NqTGjTSa0xdkxWoKkJPsdBJJeQVDu6s28OXOmVj-LzFcIHU1uMEOjHWizBAVOgoSieZC9rnLTruSEfB~xuIKgtCwCCNwrwjgAYqVU9msBbUqDrmk7uHxrQ89n20tc6iTo6sxHtiEU~5Dv6jz1TxUFb3ZAQze60p7PD6V149g__"
+    },
+    {
+      "url": "https://s3-alpha-sig.figma.com/img/0b62/41bd/485cf0730d1d07859d402adb6b28397b?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WUTP-J26cON2cYEkLCI2c-eMzXoYFK9Sas5stWIZ1V-tKOyKppmpL078E1FYSegKWKFb4rQy8kTEvzDGnIh3EFVLKWQdA-a43YHaTZgxF4SThOu9JgttHj3Qj-44ntH-~HufcYIuA3btTT~Gd9MY-Ojx6W1CwwB04YmB8OF1mukBUygaF10rQuyBC0KYoDEmPXzUT7gaiwDvQEK64p88CRwAinXD9gpZD~56lPK4H1dzi3J9jHIlSPKbiW-bUXhNITqd6-wMuYB1I3z2Shb5DwAWnyDyqQUbEhjnVW0k97syXmE13Rz9EwVAtto-tyk1jf9lHWFRuQUozGTVI~Vsvw__"
+    }
+  ],
+  "colors": [
+    { "color_hex": "" },
+    { "color_hex": "" },
+    { "color_hex": "" },
+    { "color_hex": "" }
+  ],
+  "sizes": [
+    { "title": "XS" },
+    { "title": "S" },
+    { "title": "M" },
+    { "title": "L" },
+    { "title": "XL" },
+    { "title": "2XL" },
+    { "title": "3XL" },
+    { "title": "4XL" }
+  ],
+  "in_stock": "2"
+}
