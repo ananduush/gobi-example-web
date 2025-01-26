@@ -7,6 +7,7 @@ import QualityFeatures from "./components/HomePage/QualityFeatures";
 import HomeBanner from "./components/HomePage/HomeBanner";
 import Recommendation from "./components/HomePage/Recommendations";
 import CustomerReviews from "./components/HomePage/CustomerReviews";
+import ValuesSection from "./components/HomePage/ValuesSection";
 
 export default async function Home() {
   return (
@@ -19,7 +20,7 @@ export default async function Home() {
       </div>
 
       {/* Product Description */}
-      <div className="grid grid-cols-[60%_40%] container py-[80]">
+      <div className="grid grid-cols-[60%_40%] container my-[80]">
         <ProductDescription />
 
         <ProductDetails />
@@ -41,12 +42,16 @@ export default async function Home() {
       </div>
 
       {/* Recommendations */}
-      <div className="mt-[60px]">
+      <div className="py-[60px] bg-bgColor">
         <Recommendation />
       </div>
 
-      <div className="mt-[60px]">
+      <div className="mt-[60px] mb-[40px]">
         <CustomerReviews />
+      </div>
+
+      <div className="bg-bgColor pt-[120px] pb-[80px]">
+        <ValuesSection />
       </div>
     </div>
   );

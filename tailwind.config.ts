@@ -13,10 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
         mainBlack: "#1A1817",
         lightMain: "#666666",
-        bgColor: "#F3F2ED",
+        bgColor: "#ECEBE9",
         secondaryBgColor: "#CBC9BC",
         highlight: "#E1FF4D",
         titleGray: "#3C3C3C",
+        reviewsBg: "#F3F2ED",
       },
     },
     container: {

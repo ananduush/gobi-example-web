@@ -35,7 +35,7 @@ export default function RootLayout({
         <main className="min-h-screen overflow-hidden max-w-screen max-w-[1600px] mx-auto">
           {children}
         </main>
-        <footer className="mt-[40px]">
+        <footer className="">
           <Footer />
         </footer>
       </body>
