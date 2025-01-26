@@ -9,7 +9,7 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div className="grid grid-cols-4 h-[439px]">
+    <div className="grid grid-cols-1 md:grid-cols-4 md:h-[439px] container-restriction">
       <div className="flex flex-col justify-between px-[40px]">
         <h1>Take comfort in traceable affordable exquisite quality</h1>
 
@@ -22,15 +22,20 @@ const ValuesSection = () => {
           <UnderlinedButton text="Learn more" className="w-max" />
         </div>
       </div>
-      {valuesData.map((value) => (
-        <div className="" key={value.imageUrl}>
+      {valuesData.map((value, idx) => (
+        <div
+          className={`mb-[${
+            idx == valuesData.length ? "0px" : "40px"
+          }] md:mb-0`}
+          key={value.imageUrl}
+        >
           <img
             src={value.imageUrl}
             alt={value.title}
             className="w-full h-[360px] object-cover"
           />
 
-          <h2 className="mt-[10px]">{value.title}</h2>
+          <h2 className="mt-[10px] container">{value.title}</h2>
         </div>
       ))}
     </div>

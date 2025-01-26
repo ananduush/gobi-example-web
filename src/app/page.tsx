@@ -13,31 +13,31 @@ export default async function Home() {
   return (
     <div className="">
       {/* Product display */}
-      <div className="grid grid-cols-[60%_40%]">
+      <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] container-restriction">
         <ImageDisplay />
 
         <ProductSidebar />
       </div>
 
       {/* Product Description */}
-      <div className="grid grid-cols-[60%_40%] container my-[80]">
+      <div className="grid grid-cols-1 md:gap-10 gap-[40px] md:grid-cols-[60%_40%] container my-[80] container-restriction">
         <ProductDescription />
 
         <ProductDetails />
       </div>
 
       {/* Product Features */}
-      <div>
+      <div className="container-restriction">
         <ProductFeatures />
       </div>
 
       {/* Quality Features */}
-      <div className="mt-[60px]">
+      <div className="mt-[60px] container-restriction">
         <QualityFeatures />
       </div>
 
       {/* Home Banner */}
-      <div>
+      <div className="container-restriction">
         <HomeBanner />
       </div>
 
@@ -46,11 +46,13 @@ export default async function Home() {
         <Recommendation />
       </div>
 
+      {/* Reviews */}
       <div className="mt-[60px] mb-[40px]">
         <CustomerReviews />
       </div>
 
-      <div className="bg-bgColor pt-[120px] pb-[80px]">
+      {/* Values */}
+      <div className="bg-bgColor pt-[40px] md:pt-[120px] md:pb-[80px]">
         <ValuesSection />
       </div>
     </div>

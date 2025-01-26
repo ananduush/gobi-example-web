@@ -55,8 +55,8 @@ const Recommendation = () => {
     },
   ];
   return (
-    <div className="">
-      <h1 className="text-[44px] sm:text-[54px] md:†ext-[64px] px-[40px]">
+    <div className="container-restriction">
+      <h1 className="text-[32px] lg:text-[44px] sm:text-[54px] md:†ext-[64px] px-[40px]">
         We recommend
       </h1>
 
@@ -64,10 +64,13 @@ const Recommendation = () => {
 
       <Swiper
         spaceBetween={0}
-        slidesPerView={4}
+        slidesPerView={2}
         breakpoints={{
-          640: {
+          0: {
             slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 3,
           },
           1024: {
             slidesPerView: 4,
@@ -83,10 +86,14 @@ const Recommendation = () => {
                 alt={product.name}
                 className="w-full h-48 object-cover"
               />
-              <div className="py-[10px] px-[20px]">
-                <div className="flex justify-between">
-                  <p className="md:text-[14px]">{product.name}</p>
-                  <p className="text-gray-600 font-medium">${product.price}</p>
+              <div className="py-[10px] px-[10px] md:px-[20px]">
+                <div className="flex md:flex-row flex-col items-start md:justify-between">
+                  <p className="text-[12px] md:text-[14px] text-left">
+                    {product.name}
+                  </p>
+                  <p className="text-[12px] md:text-[16px] text-gray-600 font-medium">
+                    ${product.price}
+                  </p>
                 </div>
 
                 <div>

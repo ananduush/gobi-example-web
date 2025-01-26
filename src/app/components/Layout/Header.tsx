@@ -31,6 +31,29 @@ const Header = () => {
   return (
     <div className="h-[64px] flex items-center fixed bg-bgColor w-full z-[90]">
       <div className="container flex justify-between items-center">
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden flex items-center">
+          <button
+            className="text-gray-800 focus:outline-none"
+            onClick={toggleMobileMenu}
+          >
+            <svg
+              className="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
         {/* Logo */}
         <Link href={"/"}>
           <div>
@@ -61,19 +84,18 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex lg:items-center gap-[27px]">
+        <div className="flex items-center gap-[27px]">
           {actionItems.map((e, idx) =>
             e.type == "icon" ? (
               <Link href={e.link} key={`${e.icon}-${idx}`}>
-                <img
-                  key={`${e.icon}-${idx}`}
-                  src={e.icon}
-                  alt="icon"
-                  className="max-w-[18px] min-w-[18px]"
-                />
+                <img key={`${e.icon}-${idx}`} src={e.icon} alt="icon" />
               </Link>
             ) : (
-              <Link href={e.link} key={`${e.icon}-${idx}`}>
+              <Link
+                className="lg:block hidden"
+                href={e.link}
+                key={`${e.icon}-${idx}`}
+              >
                 <span key={e.icon} className={`group relative w-max`}>
                   <p
                     className={`underline-on-hover min-w-max  ${
@@ -86,29 +108,6 @@ const Header = () => {
               </Link>
             )
           )}
-        </div>
-
-        {/* Mobile Menu Button */}
-        <div className="lg:hidden">
-          <button
-            className="text-gray-800 focus:outline-none"
-            onClick={toggleMobileMenu}
-          >
-            <svg
-              className="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
         </div>
 
         {/* Overlay */}
@@ -175,15 +174,25 @@ const Header = () => {
                   </p>
                 </Link>
               ))}
-
-              <Link onClick={toggleMobileMenu} href={"/contact-us"}>
-                <button
-                  type="button"
-                  className="text-black mt-10 hover:bg-white uppercase hover:text-black border-[1px] border-gray-300 focus:ring-4 focus:ring-black font-bold rounded-lg text-md px-5 py-2.5 me-2 mb-2 focus:outline-none"
-                >
-                  Бидэнтэй холбогдох
-                </button>
-              </Link>
+              <div className=""></div>
+              {actionItems.map(
+                (e, idx) =>
+                  e.type != "icon" && (
+                    <Link className="" href={e.link} key={`${e.icon}-${idx}`}>
+                      <span key={e.icon} className={`group relative w-max`}>
+                        <p
+                          className={`mb-4 text-xl font-semibold cursor-pointer transition-colors ${
+                            pathname === e.link
+                              ? "text-main"
+                              : "hover:text-main"
+                          }`}
+                        >
+                          {e.icon}
+                        </p>
+                      </span>
+                    </Link>
+                  )
+              )}
             </nav>
           </div>
         </div>

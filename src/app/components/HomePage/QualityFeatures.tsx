@@ -17,8 +17,8 @@ const QualityFeatures = () => {
         Quality You Can Feel
       </h1>
       <VSpacer size={40} />
-      <div className="grid grid-cols-6">
-        <div className="relative bg-[url(/images/quality/img_1.png)] h-[320px] bg-no-repeat bg-cover">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+        <div className="relative bg-[url(/images/quality/img_1.png)] h-[250px] lg:h-[320px] bg-no-repeat bg-cover">
           <div className="absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] text-center">
             <p className="uppercase text-[12px] text-white">sourced from</p>
             <h2 className="text-white mb-[40px] leading-[28px]">
@@ -31,7 +31,7 @@ const QualityFeatures = () => {
           </div>
         </div>
 
-        <div className="bg-secondaryBgColor p-[30px] flex flex-col">
+        <div className="bg-secondaryBgColor p-[30px] flex flex-col h-[250px] lg:h-[320px]">
           <p className="uppercase text-[12px] mb-[20px] text-mainBlack">
             the process
           </p>
@@ -40,18 +40,20 @@ const QualityFeatures = () => {
           <h2 className="underline-on-hover w-max">3 Knitting</h2>
         </div>
 
-        <div className="bg-[url(/images/quality/img_2.png)] bg-no-repeat bg-cover"></div>
+        <div className="bg-[url(/images/quality/img_2.png)] bg-no-repeat bg-cover h-[250px] lg:h-[320px]"></div>
 
-        <div className="relative bg-[url(/images/quality/img_3.jpeg)] bg-no-repeat bg-cover">
+        <div className="relative bg-[url(/images/quality/img_3.jpeg)] bg-no-repeat bg-cover h-[250px] lg:h-[320px]">
           <p className="md:text-[16px] absolute inset-[40px] text-mainBlack text-center flex flex-col justify-center">
             The softest lightweight cashmere at 13 microns
           </p>
         </div>
-        <div className="bg-highlight flex flex-col justify-center text-center">
+
+        <div className="bg-highlight flex flex-col justify-center text-center h-[250px] lg:h-[320px]">
           <h1 className="text-[44px] sm:text-[54px] md:†ext-[64px]">100%</h1>
           <p className="uppercase">cashmere</p>
         </div>
-        <div className="bg-secondaryBgColor flex flex-col justify-center items-center text-center">
+
+        <div className="bg-secondaryBgColor flex flex-col justify-center items-center text-center h-[250px] lg:h-[320px]">
           <div className="flex flex-wrap px-[40px] gap-x-[10px] justify-center mb-[40px]">
             {textToRender.map((e) =>
               e.type == "text" ? (

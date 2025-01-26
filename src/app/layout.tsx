@@ -32,7 +32,7 @@ export default function RootLayout({
         <header className="h-[64px]">
           <Header />
         </header>
-        <main className="min-h-screen overflow-hidden max-w-screen max-w-[1600px] mx-auto">
+        <main className="min-h-screen overflow-hidden max-w-screen mx-auto">
           {children}
         </main>
         <footer className="">

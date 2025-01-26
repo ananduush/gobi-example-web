@@ -32,7 +32,7 @@ const CustomerReviews = () => {
   ];
 
   return (
-    <div className="max-w-[660px] mx-auto flex flex-col gap-[40px]">
+    <div className="max-w-[660px] mx-auto flex flex-col gap-[40px] container">
       <div className="flex flex-col gap-[15px]">
         <h1>Customer Reviews</h1>
         <div className="flex items-center justify-between">

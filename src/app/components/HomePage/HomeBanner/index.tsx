@@ -17,48 +17,34 @@ const HomeBanner = () => {
 
   return (
     <div className="relative">
-      <Swiper
-        className="mySwiper max-h-[80vh]"
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-      >
-        {slides.map((slide, idx) => (
-          <SwiperSlide key={`home-slider-${idx}`}>
-            <div className="relative">
-              <img
-                src={slide.image}
-                alt=""
-                className="w-full h-full object-cover min-h-[600px]"
-              />
-              {/* Dimmed overlay */}
-              <div className="absolute inset-x-0 bottom-0 h-[600px] bg-gradient-to-t from-black/60 to-transparent"></div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="w-full">
+        <img
+          src="/images/banner.jpeg"
+          alt="Banner"
+          className="w-full h-screen min-h-screen max-h-[1200px] object-cover"
+        />
+        {/* Dimmed overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
 
       {/* Centered text */}
-      <div className="absolute inset-[50px] flex flex-col items-start justify-end z-10 container gap-[30px]">
+      <div className="absolute inset-0 flex flex-col items-start justify-end z-10 container pb-[50px] gap-[30px]">
         <div className="max-w-[766px]">
-          <h1 className="text-[44px] sm:text-[54px] md:†ext-[64px] text-white">
+          <h1 className="text-[44px] sm:text-[54px] md:text-[64px] text-white">
             Reborn Cashmere
           </h1>
-          <p className="text-white md:text-[18px]">
+          <p className="text-white md:text-[18px] mb-6">
             Our CashmeReborn Collection uses cashmere yarn manufactured from
             recycled yarn spinning waste to cut down on material waste and
             advance circularity. Compared to cashmere generated from raw fiber,
             reborn cashmere requires 31% less energy, 13% less water, and 16%
             less product dye to produce.
           </p>
+          <UnderlinedButton
+            text="Learn More"
+            className="text-[14px] text-white after:bg-white"
+          />
         </div>
-
-        <UnderlinedButton
-          text="Learn More"
-          className="text-[14px] text-white after:bg-white"
-        />
       </div>
     </div>
   );

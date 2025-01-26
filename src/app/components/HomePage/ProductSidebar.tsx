@@ -38,7 +38,7 @@ const ProductSidebar = () => {
         <div className="flex justify-between items-center">
           <p className="text-lightMain">Women / The Organic Collection</p>
 
-          <button>
+          <button className="lg:block hidden">
             <Image src={"/icons/heart.svg"} alt="icon" width={24} height={24} />
           </button>
         </div>

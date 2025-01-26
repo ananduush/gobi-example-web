@@ -37,18 +37,18 @@ const ProductFeatures = () => {
   return (
     <div className="">
       {productData.map((item, index) => (
-        <div key={index} className="grid grid-cols-2">
+        <div key={index} className="grid md:grid-cols-2 items-center">
           <Image
             src={item.imageUrl}
             width={720}
             height={540}
             alt=""
             className={`w-full ${
-              index % 2 == 0 ? "order-first" : "order-last"
+              index % 2 == 0 ? "md:order-first" : "md:order-last"
             }`}
           />
 
-          <div className="flex flex-col gap-[30px] px-[40px] py-[100px]">
+          <div className="flex flex-col gap-[15px] md:gap-[30px] px-[20px] md:px-[40px] pt-[20px] pb-[40px] md:py-[100px]">
             <h1>{item.title}</h1>
 
             <p className="text-[16px] text-mainBlack">{item.description}</p>
