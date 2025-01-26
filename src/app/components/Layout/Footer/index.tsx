@@ -4,9 +4,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-secondaryBgColor text-white py-[40px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[40%_1fr_1fr_1fr] gap-8">
-        <div className="">
-          <h3 className="font-medium mb-4 text-[12px]">About Us</h3>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[40%_1fr_1fr_20%] gap-8">
+        <div className="max-w-[500px]">
+          <h3 className="font-medium mb-4 text-[12px] text-black">About Us</h3>
           <p className="text-mainBlack">
             Gobi Cashmere is... lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Duis vestibulum enim vel dapibus commodo.
@@ -17,7 +17,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h3 className="font-medium mb-4 text-[12px]">Follow</h3>
+          <h3 className="font-medium mb-4 text-[12px] text-black">Follow</h3>
           <ul className="">
             <li>
               <Link href="#" className="text-mainBlack underline-on-hover">
@@ -42,7 +42,9 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="font-medium mb-4 text-[12px]">Customer Care</h3>
+          <h3 className="font-medium mb-4 text-[12px] text-black">
+            Customer Care
+          </h3>
           <ul className="">
             <li>
               <Link href="#" className="text-mainBlack underline-on-hover">
@@ -72,7 +74,9 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="font-medium mb-4 text-[12px]">Let's keep in touch!</h3>
+          <h3 className="font-medium mb-4 text-[12px] text-black">
+            Let's keep in touch!
+          </h3>
           <p className="text-mainBlack mb-4">
             Get glowing with our latest products and exclusive events.
           </p>
@@ -80,7 +84,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email address"
-              className="text-mainBlack border-b-[1px] border-mainBlack bg-secondaryBgColor px-4 py-2 flex-1"
+              className="text-mainBlack border-b-[1px] border-mainBlack bg-secondaryBgColor px-4 py-2 flex-1 focus:outline focus:outline-2 focus:outline-mainBlack"
             />
           </div>
         </div>

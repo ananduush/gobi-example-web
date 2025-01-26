@@ -15,6 +15,8 @@ const config: Config = {
         lightMain: "#666666",
         bgColor: "#F3F2ED",
         secondaryBgColor: "#CBC9BC",
+        highlight: "#E1FF4D",
+        titleGray: "#3C3C3C",
       },
     },
     container: {

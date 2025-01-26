@@ -49,7 +49,9 @@ const Header = () => {
               <span key={item.name} className={`group relative w-max`}>
                 <p
                   className={`underline-on-hover min-w-max  ${
-                    pathname === item.link ? "text-main" : "hover:text-main"
+                    pathname === item.link
+                      ? "text-mainBlack"
+                      : "hover:text-mainBlack"
                   }`}
                 >
                   {item.name}
@@ -67,7 +69,7 @@ const Header = () => {
                   key={`${e.icon}-${idx}`}
                   src={e.icon}
                   alt="icon"
-                  className="max-h-[24px]"
+                  className="max-w-[18px] min-w-[18px]"
                 />
               </Link>
             ) : (
