@@ -9,7 +9,7 @@ export const VSpacer: React.FC<SpacerProps> = ({
   size = 10,
   className = "",
 }) => {
-  const sizeClass = `h-[${size}px]`; // This won't work with Tailwind
+  const sizeClass = `h-[${size}px]`;
 
   return <div style={{ height: `${size}px` }} className={`${className}`} />;
 };

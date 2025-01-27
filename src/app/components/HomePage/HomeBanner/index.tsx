@@ -1,20 +1,8 @@
 "use client";
 import React from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "./styles.css";
-import { Autoplay } from "swiper/modules";
 import UnderlinedButton from "../../Buttons/UnderlinedButton";
 
 const HomeBanner = () => {
-  const slides = [
-    { name: "", image: "/images/banner.jpeg" },
-    { name: "", image: "/images/banner.jpeg" },
-    { name: "", image: "/images/banner.jpeg" },
-    { name: "", image: "/images/banner.jpeg" },
-  ];
-
   return (
     <div className="relative">
       <div className="w-full">
