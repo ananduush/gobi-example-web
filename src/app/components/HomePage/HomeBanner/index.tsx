@@ -30,7 +30,7 @@ const HomeBanner = () => {
       {/* Centered text */}
       <div className="absolute inset-0 flex flex-col items-start justify-end z-10 container pb-[50px] gap-[30px]">
         <div className="max-w-[766px]">
-          <h1 className="text-[44px] sm:text-[54px] md:text-[64px] text-white">
+          <h1 className="text-[32px] lg:text-[44px] sm:text-[54px] md:†ext-[64px] md:text-[64px] text-white">
             Reborn Cashmere
           </h1>
           <p className="text-white md:text-[18px] mb-6">

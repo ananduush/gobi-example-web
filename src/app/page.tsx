@@ -20,7 +20,7 @@ export default async function Home() {
       </div>
 
       {/* Product Description */}
-      <div className="grid grid-cols-1 md:gap-10 gap-[40px] md:grid-cols-[60%_40%] container my-[80] container-restriction">
+      <div className="grid grid-cols-1 md:gap-10 gap-[40px] md:grid-cols-[60%_40%] container my-[80px] container-restriction">
         <ProductDescription />
 
         <ProductDetails />

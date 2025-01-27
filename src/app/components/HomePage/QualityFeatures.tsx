@@ -13,7 +13,7 @@ const QualityFeatures = () => {
   ];
   return (
     <div className="">
-      <h1 className="text-[44px] sm:text-[54px] md:†ext-[64px] px-[40px]">
+      <h1 className="text-[32px] lg:text-[44px] sm:text-[54px] md:†ext-[64px] md:px-[40px] px-[20px]">
         Quality You Can Feel
       </h1>
       <VSpacer size={40} />
@@ -49,7 +49,9 @@ const QualityFeatures = () => {
         </div>
 
         <div className="bg-highlight flex flex-col justify-center text-center h-[250px] lg:h-[320px]">
-          <h1 className="text-[44px] sm:text-[54px] md:†ext-[64px]">100%</h1>
+          <h1 className="text-[32px] lg:text-[44px] sm:text-[54px] md:†ext-[64px]">
+            100%
+          </h1>
           <p className="uppercase">cashmere</p>
         </div>
 

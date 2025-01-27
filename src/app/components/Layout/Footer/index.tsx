@@ -1,23 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
     <div className="bg-secondaryBgColor text-white py-[40px]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-[1fr_1fr] md:grid-cols-2 lg:grid-cols-[40%_2fr_20%] gap-[60px] md:gap-8">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-[1fr_1fr] md:grid-cols-2 lg:grid-cols-[40%_2fr_20%] gap-[60px] md:gap-8">
         <div className="block md:hidden">{ContactUsColumn()}</div>
 
-        <div className="max-w-[500px]">
-          <h3 className="font-medium mb-4 text-[12px] text-black">About Us</h3>
-          <p className="text-mainBlack">
-            Gobi Cashmere is... lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Duis vestibulum enim vel dapibus commodo.
-            Suspendisse nec pharetra metus.{" "}
-            <span className="underline">
-              <Link href={"/"}>Learn More</Link>
-            </span>
-          </p>
-        </div>
+        {AboutUsColumn()}
 
         <div className="grid grid-cols-2">
           {SocialColumn()}
@@ -26,8 +17,54 @@ const Footer = () => {
 
         <div className="md:block hidden">{ContactUsColumn()}</div>
       </div>
-      <div className="mt-8 text-center text-mainBlack text-sm">
-        © 2025 Gobi Cashmere. All rights reserved.
+      <div className="container mt-[80px] items-start md:items-center flex flex-col md:flex-row gap-[10px] md:gap-[40px]">
+        <p className="md:block hidden text-mainBlack text-sm">
+          © 2025 Gobi Cashmere. All rights reserved
+        </p>
+
+        <div className="w-[1px] h-5 bg-mainBlack md:block hidden"></div>
+
+        <p className=" text-mainBlack text-sm underline-on-hover">
+          Terms & Conditions
+        </p>
+        <p className=" text-mainBlack text-sm underline-on-hover">
+          Shipping & Return Policy
+        </p>
+        <p className=" text-mainBlack text-sm underline-on-hover">
+          Privacy Policy
+        </p>
+        <p className=" text-mainBlack text-sm underline-on-hover">Affiliate</p>
+
+        <p className="md:hidden block text-mainBlack text-sm">
+          © 2025 Gobi Cashmere. All rights reserved
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const AboutUsColumn = () => {
+  return (
+    <div>
+      <div className="max-w-[500px]">
+        <h3 className="font-medium mb-4 text-[12px] text-black">About Us</h3>
+        <p className="text-mainBlack">
+          Gobi Cashmere is... lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Duis vestibulum enim vel dapibus commodo. Suspendisse nec
+          pharetra metus.{" "}
+          <span className="underline">
+            <Link href={"/"}>Learn More</Link>
+          </span>
+        </p>
+      </div>
+
+      <div className="flex items-center gap-[15px] mt-[60px]">
+        <Image src={"/icons/location.svg"} width={18} height={18} alt="" />
+
+        <div className="flex flex-col">
+          <p className="text[12px]">Country</p>
+          <p className="md:text[14px]">United States [EN]</p>
+        </div>
       </div>
     </div>
   );

@@ -80,7 +80,11 @@ const Recommendation = () => {
       >
         {products.map((product, index) => (
           <SwiperSlide key={index} className="!bg-transparent !p-0">
-            <div className="w-full">
+            <div className="w-full relative">
+              <div className="absolute top-[10px] left-[10px] rounded-[3px] bg-white px-[10px] py-[5px]">
+                <p className="uppercase">new</p>
+              </div>
+
               <img
                 src={product.imageUrl}
                 alt={product.name}
